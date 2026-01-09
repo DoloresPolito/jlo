@@ -1,0 +1,33 @@
+@use "../../../styles/variables";
+
+.main{
+    display: flex;
+    height: 50vh;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 50vh;
+    // color: $color-blue;
+
+}
+
+.body{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50vw;
+    justify-content: center;
+}
+
+.body p{
+    margin: 0px;
+    margin-right: 1.5vh;
+    font-size: 6vh;
+    line-height: 115%;
+    text-align: center;
+    margin: 0 0.75vh;
+    letter-spacing: -0.04em;
+}
+
+.body span{
+    opacity: 0.2;
+}

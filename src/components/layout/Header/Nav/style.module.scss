@@ -1,0 +1,38 @@
+@use "../../../../styles/variables" as *;
+.menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 50vw;
+  background-color: $color-grey-bg;
+  z-index: 100;
+  @media (max-width: 800px) {
+    width: 100vw;
+  }
+
+  .body {
+    padding: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    @media (max-width: 800px) {
+      padding: 4vh;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      gap: 3vh;
+
+      .text {
+        text-decoration: none;
+
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}

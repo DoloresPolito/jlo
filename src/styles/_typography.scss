@@ -1,0 +1,40 @@
+@use './variables' as *;
+
+body {
+  font-family: $font-primary;
+}
+
+//estilizar
+.h1 {
+  font-family: $font-primary;
+  font-size: 7vh;
+  line-height: 100%;
+  color: $color-blue;
+}
+
+//ok
+.h2 {
+  font-family: $font-primary;
+  font-size: 4.5vh;
+  line-height: 100%;
+  color: $color-blue;
+  font-weight: 400;
+}
+
+//estilizar
+.subtitle {
+  font-family: $font-primary;
+  font-size: 4vh;
+  line-height: 100%;
+  color: $color-blue;
+}
+
+//estilizar
+.text {
+  font-size: 2vh;
+  line-height: 100%;
+  color: $color-blue;
+  span{
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,77 @@
+@use "../../../styles/variables" as *;
+.header {
+  width: 100%;
+  height: 13.5vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  z-index: 10;
+
+  .container {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .logocontainer {
+      display: flex;
+      cursor: pointer;
+      margin-top: 0.8vh;
+    }
+
+    .headerButtonContainer {
+      z-index: 2000;
+      width: auto;
+      .button {
+        position: relative;
+        width: 7vh;
+        height: 7vh;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: transparent;
+      }
+
+      .burger {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        &::after,
+        &::before {
+          content: "";
+          display: block;
+          height: 0.2vh;
+          width: 70%;
+          margin: auto;
+          background-color: $color-blue;
+          position: relative;
+          transition: transform 0.3s;
+        }
+
+        &::after {
+          top: -0.5vh;
+        }
+
+        &::before {
+          top: 0.5vh;
+        }
+      }
+
+      .burgerActive {
+        &::after {
+          transform: rotate(45deg);
+          top: -0.1vh;
+        }
+
+        &::before {
+          transform: rotate(-45deg);
+          top: 0vh;
+        }
+      }
+    }
+  }
+}

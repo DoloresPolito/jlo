@@ -1,0 +1,56 @@
+@use "../../../styles/variables" as *;
+.about {
+  min-height: 80vh; // altura propia
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-white-font;
+  width: 80%;
+  height: 80vh;
+  .left {
+    position: relative; // obligatorio para fill
+    flex: 0.8; // ocupa la mitad del contenedor
+    height: 100%; // para que fill funcione
+    overflow: hidden;
+    width: 98%;
+    border-radius: 5vh;
+  }
+
+  .right {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 8vh; // margen interno general
+    gap: 3rem; // 👈 espacio ENTRE textos
+    height: 100%;
+    p{
+      line-height: 120%;
+    }
+  }
+
+  .right button {
+    align-self: flex-start; // 👈 clave
+  }
+
+
+
+
+  // @media (max-width: 900px) {
+  //   flex-direction: column;
+
+  //   .left,
+  //   .right {
+  //     width: 100%;
+  //   }
+
+  //   .left {
+  //     height: 300px; // altura para la imagen en móvil
+  //   }
+
+  //   .right {
+  //     padding: 2rem 1rem;
+  //   }
+  // }
+}

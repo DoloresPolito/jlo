@@ -1,0 +1,6 @@
+@use "../../../styles/variables" as *;
+
+.section {
+  padding: $section-padding 0;
+  background-color: $color-white-bg;
+}

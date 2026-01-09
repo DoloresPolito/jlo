@@ -1,0 +1,7 @@
+@use "../../../styles/variables" as *;
+.faqs {
+  min-height: 80vh; // altura propia
+  display: flex;
+  flex-direction: column;
+
+}

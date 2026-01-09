@@ -1,0 +1,26 @@
+@use "../../../styles/variables" as *;
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vh 2vh;
+  border-radius: 4vh;
+  background-color: $color-white-font;
+  font-size: 1.7vh;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  color: $color-blue;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+
+  // &:hover {
+  //   transform: translateY(-1px);
+  //   background-color: $color-blue;
+  //   color:$color-white-font
+  // }
+
+  // &:active {
+  //   transform: translateY(0);
+  // }
+}
