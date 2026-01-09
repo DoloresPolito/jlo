@@ -1,7 +1,12 @@
 import Header from "../src/components/layout/Header";
 import About from "../src/components/sections/About";
 import Faqs from "../src/components/sections/Faqs";
-import BigPhrase from "../src/components/ui/BigPhrase"
+import BigPhrase from "../src/components/ui/BigPhrase";
+import Contact from "../src/components/sections/Contact";
+import Hero from "../src/components/sections/Hero";
+import Benefits from "../src/components/sections/Benefits";
+import Work from "../src/components/sections/Work"
+
 export default function Home() {
 
   const phrase1 = "El neurocoaching no es terapia, ni mentoría, es un espacio para entender cómo funciona tu mente y tu cerebro y aprender a usarlo a tu favor."
@@ -11,10 +16,14 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <About />
+      <Hero/>
+      <Benefits id="benefits"/>
+      <About id="about"/>
       <BigPhrase phrase={phrase1}/>
-      <Faqs />
+      <Work id="work"/>
+      <Faqs id="faqs"/>
       <BigPhrase phrase={phrase2}/>
+      <Contact id="contact"/>
     </div>
   );
 }

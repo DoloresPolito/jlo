@@ -1,13 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./style.module.scss";
 import { motion } from "framer-motion";
-import { usePathname } from "next/navigation";
 import { menuSlide, slide } from "../animation";
-import Link from "next/link";
+import { Link } from "react-scroll";
 
 export default function Nav({}) {
-  const pathname = usePathname();
-//   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
+  const navItems = [
+    { label: "Neurocoaching", href: "neurocoahing" },
+    { label: "Beneficios", href: "benefits" },
+    { label: "Sobre Mi", href: "about" },
+    { label: "Cómo trabajo", href: "work" },
+    { label: "Preguntas Frecuentes", href: "faqs" },
+    { label: "Contacto", href: "contact" },
+  ];
 
   return (
     <>
@@ -19,66 +24,28 @@ export default function Nav({}) {
         className={styles.menu}
       >
         <div className={styles.body}>
-          <div
-            // onMouseLeave={() => {
-            //   setSelectedIndicator(pathname);
-            // }}
-            className={styles.nav}
-          >
-            <motion.div
-              variants={slide}
-              animate="enter"
-              exit="exit"
-              initial="initial"
-              className={styles.link}
-            >
-              <Link href="/">
-                <p className={` ${styles.text}`}>
-                  hola
-                </p>
-              </Link>
-            </motion.div>
-
-            <motion.div
-              variants={slide}
-              animate="enter"
-              exit="exit"
-              initial="initial"
-              className={styles.link}
-            >
-              <Link href="/dr">
-                <p className={`${styles.text}`}>
-                  chau
-                </p>
-              </Link>
-            </motion.div>
-            <motion.div
-              variants={slide}
-              animate="enter"
-              exit="exit"
-              initial="initial"
-              className={styles.link}
-            >
-              <Link href="/proceso">
-                <p className={`${styles.text}`}>
-                  hola
-                </p>
-              </Link>
-            </motion.div>
-            <motion.div
-              variants={slide}
-              animate="enter"
-              exit="exit"
-              initial="initial"
-              className={styles.link}
-            >
-              <Link href="/international">
-                <p className={` ${styles.text}`}>
-                  chau
-                </p>
-              </Link>
-            </motion.div>
-            
+          <div className={styles.nav}>
+            {navItems.map((item, i) => {
+              return (
+                <motion.div
+                  variants={slide}
+                  animate="enter"
+                  exit="exit"
+                  initial="initial"
+                  key={i}
+                >
+                  <Link
+                    to={item.href}
+                    spy={true}
+                    smooth={true}
+                    offset={10}
+                    duration={800}
+                  >
+                    <h2 className="h2">{item.label}</h2>
+                  </Link>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </motion.div>

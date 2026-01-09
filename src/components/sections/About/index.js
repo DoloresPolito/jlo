@@ -4,10 +4,15 @@ import styles from "./style.module.scss";
 import TitleButton from "../../ui/TitleButton";
 import Button from "../../ui/Button";
 import Image from "next/image";
-export default function About() {
+import { MaskText } from "../../ui/MaskText";
+
+export default function About({id}) {
+
+  const phrases = ["Detrás del proceso de", "transformación"];
+
   return (
     <>
-      <Section>
+      <Section id={id}>
         <Container>
           <div className={styles.about}>
             <div className={styles.left}>
@@ -23,7 +28,10 @@ export default function About() {
 
             <div className={styles.right}>
               <TitleButton>Sobre Mi</TitleButton>
-              <h2 className="h2">Detrás del proceso de transformación</h2>
+
+              <MaskText phrases={phrases} />
+
+              {/* <h2 className="h2">Detrás del proceso de transformación</h2> */}
               <p className="text">
                 Hola, soy Juan. Neurocoach apasionado por acompañar a personas
                 en su <span>proceso de crecimiento y transformación.</span>

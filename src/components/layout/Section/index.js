@@ -1,7 +1,7 @@
 import styles from "./style.module.scss";
 
-export default function Section({ children, className = "" }) {
+export default function Section({ children, id }) {
   return (
-    <section className={`${styles.section} ${className}`}>{children}</section>
+    <section id={id} className={`${styles.section}`}>{children}</section>
   );
 }

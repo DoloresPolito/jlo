@@ -1,6 +1,11 @@
 @use "../src/styles/variables";
 @use "../src/styles/typography";
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
