@@ -1,25 +1,20 @@
 "use client";
 import styles from "./style.module.scss";
-import { useState, useEffect } from "react";
-// import { usePathname } from "next/navigation";
+import { useState, useEffect} from "react";
 import { AnimatePresence } from "framer-motion";
 import Nav from "./Nav";
 
+
+
+
 export default function Header() {
-//   const pathname = usePathname();
-
   const [isActive, setIsActive] = useState(false);
-//   const [isMobile, setIsMobile] = useState(false);
-//   const [isFullWidth, setIsFullWidth] = useState(false);
 
-  const [hydrated, setHydrated] = useState(false); // Para evitar el parpadeo
+  const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       const isSmallScreen = window.innerWidth < 800;
-    //   setIsMobile(isSmallScreen);
-
-    //   setIsFullWidth(!isSmallScreen);
     };
 
     handleResize(); // Ejecutar una vez al montar
@@ -29,31 +24,39 @@ export default function Header() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+
+
   // Si aún no se determinó el tamaño, no renderizar nada
   if (!hydrated) return null;
 
+
+
+  
+
   return (
-    <div className={styles.header}>
-      <div className={styles.container}>
-        <div className={styles.logoContainer}>
-          <p>JLO</p>
-        </div>
 
-        <div className={styles.headerButtonContainer}>
-          <button
-            onClick={() => setIsActive(!isActive)}
-            className={`${styles.button}`}
-          >
-            <div
-              className={`${styles.burger} ${
-                isActive ? styles.burgerActive : ""
-              }`}
-            ></div>
-          </button>
-        </div>
+      <div className={styles.header}>
+        <div className={styles.container}>
+          <div className={styles.logoContainer}>
+            <h1 className="h1">JLO</h1>
+          </div>
 
-        <AnimatePresence mode="wait">{isActive && <Nav />}</AnimatePresence>
+          <div className={styles.headerButtonContainer}>
+            <button
+              onClick={() => setIsActive(!isActive)}
+              className={`${styles.button}`}
+            >
+              <div
+                className={`${styles.burger} ${
+                  isActive ? styles.burgerActive : ""
+                }`}
+              ></div>
+            </button>
+          </div>
+
+          <AnimatePresence mode="wait">{isActive && <Nav />}</AnimatePresence>
+        </div>
       </div>
-    </div>
+ 
   );
 }

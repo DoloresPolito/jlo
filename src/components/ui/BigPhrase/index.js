@@ -21,7 +21,7 @@ export default function BigPhrase({phrase}) {
         scrollTrigger: {
             trigger: container.current,
             scrub: true,
-            start: `top`,
+            start: "top 50%", 
             end: `+=${window.innerHeight / 1.5}`,
         },
         opacity: 1,

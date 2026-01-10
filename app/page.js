@@ -5,7 +5,7 @@ import BigPhrase from "../src/components/ui/BigPhrase";
 import Contact from "../src/components/sections/Contact";
 import Hero from "../src/components/sections/Hero";
 import Benefits from "../src/components/sections/Benefits";
-import Work from "../src/components/sections/Work"
+// import Work from "../src/components/sections/Work"
 
 export default function Home() {
 
@@ -20,7 +20,7 @@ export default function Home() {
       <Benefits id="benefits"/>
       <About id="about"/>
       <BigPhrase phrase={phrase1}/>
-      <Work id="work"/>
+      {/* <Work id="work"/> */}
       <Faqs id="faqs"/>
       <BigPhrase phrase={phrase2}/>
       <Contact id="contact"/>

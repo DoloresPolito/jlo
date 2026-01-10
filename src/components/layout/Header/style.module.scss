@@ -10,15 +10,21 @@
   z-index: 10;
 
   .container {
-    width: 98%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    font-weight: 400;
+    // background-color: rgba(0, 0, 0, 0.05);
 
     .logocontainer {
       display: flex;
       cursor: pointer;
       margin-top: 0.8vh;
+
+      h1{
+        // font-weight: 500;
+      }
     }
 
     .headerButtonContainer {
