@@ -27,9 +27,11 @@
       flex-direction: column;
       gap: 3vh;
 
+
       a {
         text-decoration: none; // 👈 saca el subrayado
         color: inherit;        // 👈 hereda el color del h2
+        cursor: pointer;
       }
 
       h2 {

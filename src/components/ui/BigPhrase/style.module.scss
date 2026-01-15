@@ -1,13 +1,12 @@
-@use "../../../styles/variables";
+@use "../../../styles/variables" as *;
 
 .main{
     display: flex;
-    height: 60vh;
+    height: 40vh;
     align-items: flex-end;
     justify-content: center;
     margin-bottom: 30vh;
-    // color: $color-blue;
-
+    background-color: $color-white-bg;
 
 }
 
@@ -17,6 +16,7 @@
     flex-wrap: wrap;
     max-width: 50vw;
     justify-content: center;
+
 }
 
 .body p{
