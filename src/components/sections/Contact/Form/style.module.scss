@@ -1,0 +1,61 @@
+@use "../../../../styles/variables" as *;
+
+.formcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: $color-blue;
+  }
+}
+
+.inputcontainer,
+.inputcontainertextarea {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 2vh 0;
+//   @media only screen and (max-width: 1000px) {
+//     width: 100%;
+//   }
+}
+
+.input {
+  height: 3vh;
+  width: 100%;
+  border: none;
+  padding-right: 1vw;
+  border-bottom: 1px solid $color-blue;
+  background-color: $color-white-bg;
+  outline: none;
+  color: $color-blue;
+
+  &::placeholder {
+    text-align: right;
+  }
+}
+
+.textarea {
+  height: 10vh;
+  width: 100%;
+  padding-right: 1vw;
+  outline: none;
+
+  &::placeholder {
+    text-align: right;
+  }
+}
+
+.buttoncontainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
