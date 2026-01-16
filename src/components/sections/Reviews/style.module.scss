@@ -1,0 +1,80 @@
+@use "../../../styles/variables" as *;
+.reviews {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 4vh 1vh;
+
+  .top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15vh;
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+    .carousel {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4vh;
+    }
+
+    .swiperWrapper {
+      width: 70%;
+      text-align: center;
+      margin-bottom: 5vh;
+
+      p {
+        color: $color-white-font;
+        line-height: 120%;
+        margin-bottom: 5vh;
+      }
+      h3 {
+        color: $color-white-font;
+      }
+    }
+
+    .navigation {
+      display: flex;
+      gap: 3vh;
+
+      @media (max-width: 800px) {
+        gap: 2vh;
+      }
+    }
+
+    .arrow {
+      height: 8vh;
+      width: 8vh;
+      border-radius: 50%;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      background-color: rgba(255, 255, 255, 0.15);
+
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      color: $color-white-font;
+      &:hover {
+        transform: translateX(4px);
+        background-color: rgba(255, 255, 255, 0.25);
+      }
+    }
+
+    .swiper {
+      width: 100%;
+    }
+
+
+
+
+  }
+}

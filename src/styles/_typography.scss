@@ -22,13 +22,14 @@ body {
   font-weight: 400;
 }
 
-//estilizar
+//nombre en review
 .subtitle {
   font-family: $font-primary;
-  font-size: 4vh;
+  font-size: 2.5vh;
   line-height: 100%;
   color: $color-blue;
-  // font-weight: 400; 
+  font-weight: 300;
+
 }
 
 .form-message{

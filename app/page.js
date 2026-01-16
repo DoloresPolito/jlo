@@ -6,6 +6,7 @@ import Contact from "../src/components/sections/Contact";
 import Hero from "../src/components/sections/Hero";
 import Benefits from "../src/components/sections/Benefits";
 // import Work from "../src/components/sections/Work"
+import Reviews from "../src/components/sections/Reviews"
 
 export default function Home() {
 
@@ -23,6 +24,7 @@ export default function Home() {
       {/* <Work id="work"/> */}
       <Faqs id="faqs"/>
       <BigPhrase phrase={phrase2}/>
+      <Reviews id="reviews"/>
       <Contact id="contact"/>
     </div>
   );
