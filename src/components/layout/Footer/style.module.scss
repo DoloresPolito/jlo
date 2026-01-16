@@ -1,0 +1,60 @@
+@use "../../../styles/variables" as *;
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+
+  .top {
+    margin-bottom: 1vh;
+    h1 {
+      font-size: 12vh;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    font-size: 1.8vh;
+  }
+
+  .colLeft,
+  .colCenter,
+  .colRight {
+    flex: 1;
+  }
+
+  .colLeft {
+    text-align: left;
+  }
+
+  .colCenter {
+    text-align: center;
+  }
+
+  .colRight {
+    text-align: right;
+  }
+
+  a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    padding-bottom: 0.2vh;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0%;
+      height: 0.15vh;
+      background-color: currentColor;
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
