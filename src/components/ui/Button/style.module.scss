@@ -28,40 +28,20 @@
     margin-right: 0.8rem; // espacio entre texto y icono
   }
 
+
+
   .icon {
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.75);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 1.8em;
-    height: 1.8em;
-    border-radius: 50%;
-    background-color: $color-white-font;
     position: relative;
-
-    /* Flecha a 45° */
-    transform: rotate(-45deg);
-
-    // PALITO
-    &::before {
-      content: "";
-      position: absolute;
-      width: 0.9em;
-      height: 2px;
-      background-color: $color-blue;
-      left: 0.45em;
-    }
-
-    // PUNTA (alineada con el palito)
-    &::after {
-      content: "";
-      position: absolute;
-      width: 0.35em;
-      height: 0.35em;
-      border-top: 2px solid $color-blue;
-      border-right: 2px solid $color-blue;
-      right: 0.35em;
-      top: 50%;
-      transform: translateY(-50%) rotate(45deg);
-    }
+    transition: transform 0.3s ease, background-color 0.2s ease;
+  color:$color-blue;
+  
+    
   }
 }

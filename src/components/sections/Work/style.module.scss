@@ -1,7 +1,97 @@
 @use "../../../styles/variables" as *;
 .work {
-  min-height: 80vh; // altura propia
+  height: auto; // altura propia
   display: flex;
   flex-direction: column;
 
+  .top {
+    display: flex;
+    width: 40%;
+    align-self: flex-end;
+    margin-bottom: 3vh;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 0vh;
+    align-items: stretch;
+
+    .left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 3vh;
+      flex: 0 0 55%;
+      margin-right: 3vh;
+
+      .topleft {
+        display: flex;
+        flex-direction: column;
+        background-color: $color-grey-bg;
+        padding: 4vh;
+        border-radius: 5vh;
+        width: 100%;
+        align-items: flex-start;
+        gap: 4vh;
+        margin-bottom: 3vh;
+      }
+
+      .bottomleft {
+        display: flex;
+        flex-direction: column;
+        background-color: $color-blue;
+        padding: 4vh;
+        border-radius: 5vh;
+        width: 100%;
+        align-items: flex-start;
+
+        .itemscontainer {
+          display: flex;
+          flex-direction: column;
+          gap: 4vh;
+          margin-top: 6vh;
+          margin-bottom: 6vh;
+
+          .item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 3vh;
+
+            p {
+              color: $color-white-font;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      flex: 0 0 43%;
+      position: relative; // 👈 necesario para Image fill
+      align-self: stretch;
+      border-radius: 5vh;
+      overflow: hidden; // para respetar bordes
+    
+    }
+  }
+
+  .openButton {
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateX(0.5vh);
+    }
+  }
 }

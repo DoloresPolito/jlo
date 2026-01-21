@@ -3,15 +3,7 @@ import styles from "./style.module.scss";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-// const phrases = [
-//   "It is a long established fact",
 
-//   "that a reader will be distracted",
-
-//   "by the readable content of a page",
-
-//   "when looking at its layout.",
-// ];
 
 export function MaskText({phrases}) {
   const animation = {

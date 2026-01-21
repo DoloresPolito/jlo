@@ -9,7 +9,8 @@ export default function Button({ children,  type = "button", onClick, disabled, 
       disabled={disabled}
     >
       <span className={styles.text}>{children}</span>
-      <span className={styles.icon}></span>
+      <span className={styles.icon}>→</span>
+      {/* <div className={styles.openButton}>→</div> */}
     </button>
   
   );
