@@ -1,56 +1,56 @@
 @use "../../../styles/variables" as *;
 .about {
-  min-height: 80vh; // altura propia
   display: flex;
   flex-direction: row;
   justify-self: center;
   justify-content: space-between;
   align-items: center;
   color: $color-white-font;
+  align-items: stretch;
   width: 80%;
-  height: 80vh;
+
   .left {
-    position: relative; // obligatorio para fill
-    flex: 0.8; // ocupa la mitad del contenedor
-    height: 100%; // para que fill funcione
+    border-radius: 5vh;
+
+    position: relative;
+    flex: 1;
     overflow: hidden;
-    width: 98%;
     border-radius: 5vh;
   }
 
   .right {
-    flex: 0.8;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 5vh 8vh; // margen interno general
-    gap: 3rem; // 👈 espacio ENTRE textos
-    height: 100%;
-    p{
+    padding: 5vh 8vh;
+    gap: 6vh;
+
+    p {
       line-height: 120%;
     }
   }
 
   .right button {
-    align-self: flex-start; // 👈 clave
+    align-self: flex-start; 
   }
 
+  @media (max-width: 1000px) {
+   
+      flex-direction: column;
+      width: 100%;
+      gap: 4vh;
+  
 
+    .left {
+      width: 100%;
+      min-height: 40vh;
+    }
 
+    .right {
+      padding: 4vh 2vh;
+      gap: 5vh;
 
-  // @media (max-width: 900px) {
-  //   flex-direction: column;
-
-  //   .left,
-  //   .right {
-  //     width: 100%;
-  //   }
-
-  //   .left {
-  //     height: 300px; // altura para la imagen en móvil
-  //   }
-
-  //   .right {
-  //     padding: 2rem 1rem;
-  //   }
-  // }
+ 
+    }
+  }
 }

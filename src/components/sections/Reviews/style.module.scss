@@ -8,7 +8,7 @@
   .top {
     display: flex;
     align-items: center;
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
   }
 
   .bottom {
@@ -16,6 +16,8 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 10vh;
+
+ 
     .carousel {
       width: 100%;
       max-width: 1200px;
@@ -23,12 +25,19 @@
       flex-direction: column;
       align-items: center;
       gap: 4vh;
+
+
     }
 
     .swiperWrapper {
       width: 70%;
       text-align: center;
       margin-bottom: 5vh;
+      @media (max-width: 800px) {
+  
+        width: 90%;
+        margin-bottom: 3vh;
+      }
 
       p {
         color: $color-white-font;
@@ -72,9 +81,5 @@
     .swiper {
       width: 100%;
     }
-
-
-
-
   }
 }
