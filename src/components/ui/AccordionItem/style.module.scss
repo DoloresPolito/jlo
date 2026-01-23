@@ -11,6 +11,7 @@
     width: 100%;
     height: auto;
     margin: 1vh 0vh;
+    padding: 0vh 1vh;
   }
 
   &:last-child {
@@ -27,31 +28,38 @@
     cursor: pointer;
     justify-content: space-between;
     transition: 0.3s;
-    height: 8vh;   
+    height: 8vh;
+    @media only screen and (max-width: 1000px) {
+      height: 6vh;
+    }
 
     p {
       font-size: 2.5vh;
       line-height: 130%;
+      @media only screen and (max-width: 1000px) {
+        font-size: 2vh;
+      }
     }
 
     .icon {
-        width: 5vh;
-        height: 5vh;
-        border: 1px solid #F5F4EB;
-        background-color: #F5F4EB;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      
-        span {
-          font-size: 4vh;
-          line-height: 1;
-          color: $color-blue;
-          font-weight: 200;
-          user-select: none;
-        }
+      width: 5vh; 
+      aspect-ratio: 1/1;
+
+      border: 1px solid #f5f4eb;
+      background-color: #f5f4eb;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        font-size: 4vh;
+        line-height: 1;
+        color: $color-blue;
+        font-weight: 200;
+        user-select: none;
       }
+    }
   }
 
   .motionContent {

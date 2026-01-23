@@ -31,6 +31,11 @@
       flex: 0 0 55%;
       margin-right: 3vh;
 
+      @media (max-width: 800px) 
+      {
+        margin-right: 0vh;
+      }
+
       .topleft {
         display: flex;
         flex-direction: column;
@@ -41,6 +46,10 @@
         align-items: flex-start;
         gap: 5vh;
         padding-bottom: 10vh;
+        @media (max-width: 800px) 
+        {
+          padding: 4vh 3vh;
+        }
       }
 
       .bottomleft {
@@ -51,6 +60,11 @@
         border-radius: 5vh;
         width: 100%;
         align-items: flex-start;
+
+        @media (max-width: 800px) 
+        {
+          padding: 4vh 2vh;
+        }
 
         .itemscontainer {
           display: flex;
@@ -86,8 +100,9 @@
   }
 
   .openButton {
-    width: 5vh;
-    height: 5vh;
+
+    width: 5vh; 
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     border: none;
     background-color: rgba(255, 255, 255, 0.75);
