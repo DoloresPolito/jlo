@@ -30,6 +30,12 @@
       margin-top: 5vh;
       height: 30%;
 
+      @media (max-width: 1000px) {
+        flex-direction: column;
+        height: auto;
+        gap:3vh
+      }
+
     }
 
     .thirdrow {
@@ -39,11 +45,21 @@
       display: flex;
       flex-direction: row;
 
+   
+
       .benefitscards {
         display: flex;
         width: 100%;
         gap: 4vh;
+
+        @media (max-width: 800px) {
+          flex-direction: column;
+          min-height: auto;
+          gap: 2vh;
+        }
       }
+
+      
     }
   }
 }

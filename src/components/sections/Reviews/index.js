@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import AnimatedDiv from "../../ui/AnimatedDiv/AnimatedDiv";
 
 export default function Reviews({ id }) {
   const items = [
@@ -43,7 +44,9 @@ export default function Reviews({ id }) {
 
             <div className={styles.bottom}>
               <div className={styles.carousel}>
+                
                 <div className={styles.swiperWrapper}>
+                  <AnimatedDiv>
                   <Swiper
                     modules={[Navigation]}
                     slidesPerView={1}
@@ -61,6 +64,7 @@ export default function Reviews({ id }) {
                       </SwiperSlide>
                     ))}
                   </Swiper>
+                  </AnimatedDiv>
                 </div>
 
                 <div className={styles.navigation}>

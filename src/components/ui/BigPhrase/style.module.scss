@@ -1,35 +1,45 @@
 @use "../../../styles/variables" as *;
 
-.main{
-    display: flex;
-    height: 40vh;
-    align-items: flex-end;
-    justify-content: center;
-    margin-bottom: 30vh;
-    background-color: $color-white-bg;
-
+.main {
+  display: flex;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30vh;
+  background-color: $color-white-bg;
+  @media (max-width: 1000px) {
+    height: 45vh;
+    margin-bottom: 10vh;
+    margin-top: 20vh;
+  }
 }
 
-.body{
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 50vw;
-    justify-content: center;
+.body {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 50vw;
+  justify-content: center;
 
+  @media (max-width: 1000px) {
+    max-width: 80vw;
+  }
 }
 
-.body p{
-    margin: 0px;
-    margin-right: 1.5vh;
-    font-size: 6vh;
-    line-height: 115%;
-    text-align: center;
-    margin: 0 0.75vh;
-    letter-spacing: -0.04em;
-   
+.body p {
+  margin: 0px;
+  margin-right: 1.5vh;
+  font-size: 6vh;
+  line-height: 115%;
+  text-align: center;
+  margin: 0 0.75vh;
+  letter-spacing: -0.04em;
+
+  @media (max-width: 1000px) {
+    font-size: 5vh;
+  }
 }
 
-.body span{
-    opacity: 0.2;
+.body span {
+  opacity: 0.2;
 }

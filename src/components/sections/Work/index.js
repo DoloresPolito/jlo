@@ -5,13 +5,12 @@ import TitleButton from "../../ui/TitleButton";
 import { MaskText } from "../../ui/MaskText";
 import Image from "next/image";
 import image from "../../../../public/images/work-image.png";
-
+import AnimatedDiv from "../../ui/AnimatedDiv/AnimatedDiv";
 export default function Work({ id }) {
   const phrases = [
     "Cada encuentro uno a uno está diseñado",
     "para ayudarte a ganar claridad",
     "sobre lo que querés y cómo avanzar.",
-
   ];
 
   const items = [
@@ -27,8 +26,7 @@ export default function Work({ id }) {
         <Container>
           <div className={styles.work}>
             <div className={styles.top}>
-            <MaskText phrases={phrases} />
-             
+              <MaskText phrases={phrases} />
             </div>
 
             <div className={styles.bottom}>
@@ -36,21 +34,24 @@ export default function Work({ id }) {
                 <div className={styles.topleft}>
                   <TitleButton>Cómo trabajo</TitleButton>
                   <p className="text">
-                Si estás frente a un desafío, querés impulsar un proyecto o
-                simplemente necesitás claridad para avanzar, no vas a hacerlo
-                solo. Estaré a tu lado para sostener el foco, activar el cambio
-                y acompañarte en cada etapa.
-              </p>
+                    Si estás frente a un desafío, querés impulsar un proyecto o
+                    simplemente necesitás claridad para avanzar, no vas a
+                    hacerlo solo. Estaré a tu lado para sostener el foco,
+                    activar el cambio y acompañarte en cada etapa.
+                  </p>
                 </div>
+              
                 <div className={styles.bottomleft}>
                   <TitleButton>Beneficios</TitleButton>
-                
+                  <AnimatedDiv>
                   <div className={styles.itemscontainer}>
                     {items.map((item, i) => {
                       return <Item key={i} item={item} />;
                     })}
                   </div>
+                  </AnimatedDiv>
                 </div>
+          
               </div>
 
               <div className={styles.right}>

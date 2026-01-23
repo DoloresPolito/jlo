@@ -4,4 +4,8 @@
   padding: $section-padding 0;
   background-color: $color-white-bg;
 
+  @media (max-width: 800px) {
+padding: 5vh 0;
+  }
+
 }

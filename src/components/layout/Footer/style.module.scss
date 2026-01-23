@@ -9,6 +9,11 @@
     h1 {
       font-size: 12vh;
     }
+
+    @media (max-width: 800px) {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 
   .bottom {
@@ -16,6 +21,10 @@
     align-items: flex-end;
     width: 100%;
     font-size: 1.8vh;
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
   }
 
   .colLeft,
