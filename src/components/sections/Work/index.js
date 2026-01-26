@@ -32,7 +32,7 @@ export default function Work({ id }) {
             <div className={styles.bottom}>
               <div className={styles.left}>
                 <div className={styles.topleft}>
-                  <TitleButton>Cómo trabajo</TitleButton>
+                  <TitleButton border >Cómo trabajo</TitleButton>
                   <p className="text">
                     Si estás frente a un desafío, querés impulsar un proyecto o
                     simplemente necesitás claridad para avanzar, no vas a

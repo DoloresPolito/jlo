@@ -1,6 +1,4 @@
 @use "../../../styles/variables" as *;
-
-
 .card {
   flex: 1;
   min-width: 0;
@@ -17,12 +15,11 @@
     margin-bottom: 0.5vh;
     font-weight: 400;
   }
-
   h4 {
     font-size: 1.8vh;
     opacity: 0.8;
     font-weight: 400;
-    color:#abaaa6;
+    color: #abaaa6;
   }
 }
 .text {
@@ -31,7 +28,6 @@
   line-height: 130%;
   max-width: 90%;
 }
-
 .openButton {
   position: absolute;
   bottom: 3vh;
@@ -48,23 +44,19 @@
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease, background-color 0.3s ease;
-
   &:hover {
     transform: translateX(4px);
     background-color: rgba(255, 255, 255, 0.25);
   }
 }
-
 .white {
   background-color: $color-grey-bg;
   color: $color-blue;
 }
-
 .blue {
   background-color: $color-blue;
   color: $color-white-font;
 }
-
 .button {
   margin-top: 2vh;
 }

@@ -9,18 +9,11 @@
   background-color: $color-white-font;
   font-size: 1.7vh;
   border: none;
-  cursor: pointer;
   white-space: nowrap;
   color: $color-blue;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+}
 
-  // &:hover {
-  //   transform: translateY(-1px);
-  //   background-color: $color-blue;
-  //   color:$color-white-font
-  // }
-
-  // &:active {
-  //   transform: translateY(0);
-  // }
+.withBorder {
+  border: 0.2vh solid $color-blue;
+  background-color: transparent;
 }
