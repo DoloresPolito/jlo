@@ -4,10 +4,9 @@ import { motion } from "framer-motion";
 import { menuSlide, slide } from "../animation";
 import { Link } from "react-scroll";
 
-export default function Nav({}) {
+export default function Nav({ closeMenu }) {
   const navItems = [
-    { label: "Neurocoaching", href: "neurocoahing" },
-    { label: "Beneficios", href: "benefits" },
+    { label: "Neurocoaching", href: "benefits" },
     { label: "Sobre Mi", href: "about" },
     { label: "Cómo trabajo", href: "work" },
     { label: "Preguntas Frecuentes", href: "faqs" },
@@ -36,10 +35,10 @@ export default function Nav({}) {
                 >
                   <Link
                     to={item.href}
-                    spy={true}
                     smooth={true}
-                    offset={10}
-                    duration={800}
+                    offset={5}
+                    duration={400}
+                    onClick={closeMenu}
                   >
                     <h2 className="h2">{item.label}</h2>
                   </Link>

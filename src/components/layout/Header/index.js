@@ -54,7 +54,10 @@ export default function Header() {
             </button>
           </div>
 
-          <AnimatePresence mode="wait">{isActive && <Nav />}</AnimatePresence>
+          {/* <AnimatePresence mode="wait">{isActive && <Nav />}</AnimatePresence> */}
+          <AnimatePresence mode="wait">
+  {isActive && <Nav closeMenu={() => setIsActive(false)} />}
+</AnimatePresence>
         </div>
       </div>
  
