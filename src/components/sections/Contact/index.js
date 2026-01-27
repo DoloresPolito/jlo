@@ -7,8 +7,8 @@ import Form from "./Form";
 
 export default function Contact({ id }) {
   const phrases = [
-    "Es el primer paso para empezar a",
-    "generar el cambio que estás",
+    "Es el primer paso para empezar ",
+    "a generar el cambio que estás",
     "buscando.",
   ];
 
@@ -24,6 +24,7 @@ export default function Contact({ id }) {
             <div className={styles.bottom}>
               <div className={styles.left}>
                 <MaskText phrases={phrases} />
+
                 <p className="text">
                   Dejame tus datos y coordinamos una charla.
                 </p>

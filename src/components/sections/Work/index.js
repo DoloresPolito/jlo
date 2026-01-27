@@ -32,26 +32,28 @@ export default function Work({ id }) {
             <div className={styles.bottom}>
               <div className={styles.left}>
                 <div className={styles.topleft}>
-                  <TitleButton border >Cómo trabajo</TitleButton>
+                  <TitleButton border>Cómo trabajo</TitleButton>
                   <p className="text">
-                    Si estás frente a un desafío, querés impulsar un proyecto o
-                    simplemente necesitás claridad para avanzar, no vas a
-                    hacerlo solo. Estaré a tu lado para sostener el foco,
-                    activar el cambio y acompañarte en cada etapa.
+                    Si estás frente a un <span>desafío</span>, querés{" "}
+                    <span>impulsar un proyecto</span> o simplemente necesitás{" "}
+                    <span>claridad para avanzar</span>, no vas a hacerlo solo.
+                    <span>Estaré a tu lado</span> para{" "}
+                    <span>sostener el foco</span>,{" "}
+                    <span>activar el cambio</span> y
+                    <span>acompañarte en cada etapa</span>.
                   </p>
                 </div>
-              
+
                 <div className={styles.bottomleft}>
                   <TitleButton>Beneficios</TitleButton>
                   <AnimatedDiv>
-                  <div className={styles.itemscontainer}>
-                    {items.map((item, i) => {
-                      return <Item key={i} item={item} />;
-                    })}
-                  </div>
+                    <div className={styles.itemscontainer}>
+                      {items.map((item, i) => {
+                        return <Item key={i} item={item} />;
+                      })}
+                    </div>
                   </AnimatedDiv>
                 </div>
-          
               </div>
 
               <div className={styles.right}>

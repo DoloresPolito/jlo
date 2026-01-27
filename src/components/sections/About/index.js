@@ -46,11 +46,13 @@ export default function About({ id }) {
                 </span>
               </p>
               <p className="text">
-                En las sesiones, exploramos dónde estás hoy y hacia dónde querés
-                ir, diseñando juntos un plan de acción concreto. Lo hacemos
-                utilizando herramientas basadas en la neurociencia, la
-                creatividad y una mirada positiva del cambio, para que los
-                avances sean reales, sostenibles y alineados con vos.
+                En las sesiones, exploramos <span>dónde estás hoy</span> y{" "}
+                <span>hacia dónde querés ir</span>, diseñando juntos un{" "}
+                <span>plan de acción concreto</span>. Lo hacemos utilizando{" "}
+                <span>herramientas basadas en la neurociencia</span>, la
+                creatividad y una <span>mirada positiva del cambio</span>, para
+                que los avances sean{" "}
+                <span>reales, sostenibles y alineados con vos</span>.
               </p>
 
               <Link to="contact" smooth={true} offset={5} duration={400}>

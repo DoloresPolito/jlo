@@ -1,6 +1,6 @@
 @use "../../../styles/variables" as *;
 .benefits {
-  min-height: 80vh; 
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   background-color: $color-white-bg;
@@ -10,50 +10,46 @@
   align-items: center;
   height: auto;
 
-
   .description {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
- 
 
     .firstrow {
       margin-top: 10vh;
       height: 20%;
-
     }
 
     .secondrow {
       display: flex;
       flex-direction: row;
-      justify-content: space-between; 
+      justify-content: space-between;
       align-items: flex-start;
       margin-top: 5vh;
       height: 30%;
 
       h2 {
-        flex: 1; 
-        max-width: 55%; 
-      }
-    
-      p {
-        width: 40%;
+        flex: 1;
+        max-width: 55%;
       }
 
- 
+      p {
+        width: 40%;
+
+        line-height: 120%;
+      }
 
       @media (max-width: 1000px) {
         flex-direction: column;
         gap: 3vh;
-    
+
         h2,
         p {
           width: 100%;
           max-width: 100%;
         }
       }
-
     }
 
     .thirdrow {
@@ -62,8 +58,6 @@
       border-radius: 5vh;
       display: flex;
       flex-direction: row;
-
-   
 
       .benefitscards {
         display: flex;
@@ -78,8 +72,6 @@
           gap: 2vh;
         }
       }
-
-      
     }
   }
 }

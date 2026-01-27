@@ -4,11 +4,24 @@
   display: flex;
   flex-direction: column;
 
+  // .top {
+  //   display: flex;
+  //   width: 100%;
+  //   align-self: flex-start;
+  //   margin-bottom: 3vh;
+  // }
+
   .top {
-    display: flex;
+    display: block;
     width: 100%;
     align-self: flex-start;
     margin-bottom: 3vh;
+  }
+  
+  @media (max-width: 800px) {
+    .top {
+      display: none;
+    }
   }
 
   .bottom {
@@ -29,6 +42,10 @@
       gap: 3vh;
       flex: 0 0 55%;
       margin-right: 3vh;
+
+      p{
+        line-height: 120%;
+      }
 
       @media (max-width: 800px) {
         margin-right: 0vh;
@@ -95,12 +112,12 @@
   }
 
   .openButton {
-    width: 5vh;
+    width: 4vh;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     border: none;
-    background-color: rgba(255, 255, 255, 0.75);
-    color: inherit;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: $color-white-font;
     display: flex;
     align-items: center;
     justify-content: center;
