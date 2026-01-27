@@ -41,12 +41,21 @@ export default function Nav({ closeMenu }) {
                     onClick={closeMenu}
                   >
                     <h2 className="h2">{item.label}</h2>
-
-                    
                   </Link>
                 </motion.div>
               );
             })}
+          </div>
+
+          <div className={styles.contact}>
+            <a href="mailto:jloneurocoach@gmail.com">JLONEUROCOACH@gmail.com</a>
+            <a
+              href="https://www.linkedin.com/in/lopezolacireguijuan/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ln/lopezolacireguijuan
+            </a>
           </div>
         </div>
       </motion.div>

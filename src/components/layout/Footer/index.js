@@ -25,11 +25,11 @@ export default function Footer() {
 
               <div className={styles.colRight}>
                 <a
-                  href="https://www.instagram.com/jloneurocoaching"
+                  href="https://www.linkedin.com/in/lopezolacireguijuan/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  IG (@JLONEUROCOACHING)
+                  ln/lopezolacireguijuan
                 </a>
               </div>
             </div>
