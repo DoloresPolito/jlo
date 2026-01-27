@@ -26,7 +26,7 @@ export default function Contact({ id }) {
                 <MaskText phrases={phrases} />
 
                 <p className="text">
-                  Dejame tus datos y coordinamos una charla.
+                Dejame tus datos y coordinamos una primera charla gratuita para conocernos.
                 </p>
               </div>
               <div className={styles.right}>

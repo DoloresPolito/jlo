@@ -55,7 +55,13 @@ export default function About({ id }) {
                 <span>reales, sostenibles y alineados con vos</span>.
               </p>
 
-              <Link to="contact" smooth={true} offset={5} duration={400}>
+              <Link to="contact"
+              
+              smooth={true}
+              offset={-5}
+              duration={1000}
+              
+            >
                 <Button>Contacto</Button>
               </Link>
             </div>
