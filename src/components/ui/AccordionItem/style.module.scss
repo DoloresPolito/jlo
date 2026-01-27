@@ -70,8 +70,13 @@
     padding: 2vh 2vh;
     margin-bottom: 2vh;
     margin-top: 2vh;
+  
     p {
       line-height: 130%;
+  
+      &:not(:last-child) {
+        margin-bottom: 1.5vh;
+      }
     }
   }
 }

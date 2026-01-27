@@ -11,6 +11,9 @@ export const AccordionItem = ({
 }) => {
   const isActive = active === id;
 
+
+  const paragraphs = Array.isArray(content) ? content : [content];
+
   return (
     <div className={styles.card}>
       <div onClick={() => handleToggle(id)} className={styles.header}>
@@ -39,8 +42,14 @@ export const AccordionItem = ({
         transition={{ duration: 0.35 }}
         className={styles.motionContent}
       >
+
+
         <div className={styles.content}>
-          <p className="text">{content}</p>
+          {paragraphs.map((text, index) => (
+            <p key={index} className="text">
+              {text}
+            </p>
+          ))}
         </div>
       </motion.div>
     </div>

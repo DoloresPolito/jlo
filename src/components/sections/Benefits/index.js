@@ -3,10 +3,23 @@ import Section from "../../layout/Section";
 import Container from "../../layout/Container";
 import styles from "./style.module.scss";
 import TitleButton from "../../ui/TitleButton";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BenefitCard from "../../ui/BenefitCard";
 export default function Benefits({ id }) {
   const [activeIndex, setActiveIndex] = useState(0);
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 800);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   const benefitsData = [
     {
       id: 0,
@@ -58,19 +71,18 @@ export default function Benefits({ id }) {
                   cómo podés crear los cambios que realmente necesitás.
                 </p>
               </div>
-              <div className={styles.thirdrow}> 
-
+              <div className={styles.thirdrow}>
                 <div className={styles.benefitscards}>
                   {benefitsData.map((item, index) => (
                     <BenefitCard
                       key={item.id}
                       data={item}
-                      isActive={activeIndex === index}
+                      isActive={isMobile ? true : activeIndex === index}
+                      isMobile={isMobile}
                       onOpen={() => setActiveIndex(index)}
                     />
                   ))}
                 </div>
-                
               </div>
             </div>
           </Container>
