@@ -35,9 +35,13 @@ export default function Nav({ closeMenu }) {
                 >
                   <Link
                     to={item.href}
-                    smooth={true}
-                    offset={5}
-                    duration={400}
+                    // smooth="easeInOutCubic"
+                    // duration={1200}
+
+                    smooth="easeInOutQuart"
+                    duration={900}
+                    offset={-5}
+                    delay={0}
                     onClick={closeMenu}
                   >
                     <h2 className="h2">{item.label}</h2>
