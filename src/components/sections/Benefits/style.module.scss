@@ -10,6 +10,7 @@
   align-items: center;
   height: auto;
 
+
   .description {
     width: 100%;
     height: 100%;
@@ -26,14 +27,31 @@
     .secondrow {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between; 
+      align-items: flex-start;
       margin-top: 5vh;
       height: 30%;
 
+      h2 {
+        flex: 1; 
+        max-width: 55%; 
+      }
+    
+      p {
+        width: 40%;
+      }
+
+ 
+
       @media (max-width: 1000px) {
         flex-direction: column;
-        height: auto;
-        gap:3vh
+        gap: 3vh;
+    
+        h2,
+        p {
+          width: 100%;
+          max-width: 100%;
+        }
       }
 
     }
@@ -51,8 +69,10 @@
         display: flex;
         width: 100%;
         gap: 4vh;
+        box-sizing: border-box; // 👈 importante
+        overflow: hidden;
 
-        @media (max-width: 800px) {
+        @media (max-width: 1000px) {
           flex-direction: column;
           min-height: auto;
           gap: 2vh;

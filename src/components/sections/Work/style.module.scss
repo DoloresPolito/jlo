@@ -9,7 +9,6 @@
     width: 100%;
     align-self: flex-start;
     margin-bottom: 3vh;
-
   }
 
   .bottom {
@@ -31,8 +30,7 @@
       flex: 0 0 55%;
       margin-right: 3vh;
 
-      @media (max-width: 800px) 
-      {
+      @media (max-width: 800px) {
         margin-right: 0vh;
       }
 
@@ -46,9 +44,8 @@
         align-items: flex-start;
         gap: 5vh;
         padding-bottom: 10vh;
-        @media (max-width: 800px) 
-        {
-          padding: 4vh 3vh;
+        @media (max-width: 800px) {
+          padding: 4vh 2vh;
         }
       }
 
@@ -61,8 +58,7 @@
         width: 100%;
         align-items: flex-start;
 
-        @media (max-width: 800px) 
-        {
+        @media (max-width: 800px) {
           padding: 4vh 2vh;
         }
 
@@ -78,7 +74,9 @@
             flex-direction: row;
             align-items: center;
             gap: 3vh;
-
+            @media (max-width: 800px) {
+              gap: 1.5vh;
+            }
             p {
               color: $color-white-font;
             }
@@ -93,15 +91,11 @@
       align-self: stretch;
       border-radius: 5vh;
       overflow: hidden; // para respetar bordes
-
-      
-    
     }
   }
 
   .openButton {
-
-    width: 5vh; 
+    width: 5vh;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     border: none;

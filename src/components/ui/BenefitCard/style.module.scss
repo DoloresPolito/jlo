@@ -1,7 +1,7 @@
 @use "../../../styles/variables" as *;
 .card {
   flex: 1;
-  min-width: 0;
+  min-width: 0; 
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
   border-radius: 3vh;
   position: relative;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     padding: 2vh;
   }
 }
@@ -34,11 +34,8 @@
   max-width: 98%;
 
   @media (max-width: 1000px) {
-    font-size: 1.8vh;
-  }
-  @media (max-width: 800px) {
     margin-top: 5vh;
- 
+    font-size: 1.8vh;
     margin-bottom: 5vh;
   }
 }

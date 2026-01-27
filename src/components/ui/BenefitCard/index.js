@@ -11,7 +11,7 @@ export default function BenefitCard({ data, isActive, onOpen, isMobile }) {
           ? {}
           : {
               flexGrow: isActive ? 1.6 : 1,
-              minWidth: isActive ? "30%" : "22%",
+              flexBasis: isMobile ? "100%" : "0%",
             }
       }
       transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}

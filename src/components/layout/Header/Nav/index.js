@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./style.module.scss";
 import { motion } from "framer-motion";
 import { menuSlide, slide } from "../animation";
-import { Link, scroller } from "react-scroll";
+import { Link } from "react-scroll";
 
 export default function Nav({ closeMenu }) {
   const navItems = [

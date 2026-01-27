@@ -12,7 +12,7 @@ export default function Benefits({ id }) {
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 800);
+      setIsMobile(window.innerWidth <= 1000);
     };
 
     checkMobile();
@@ -61,16 +61,18 @@ export default function Benefits({ id }) {
               <div className={styles.firstrow}>
                 <TitleButton>Beneficios del Neurocoaching</TitleButton>
               </div>
+
               <div className={styles.secondrow}>
                 <h2 className="h2">
                   Impulsá tu crecimiento con enfoque, estrategia y determinación
                 </h2>
                 <p className="text">
                   No se trata de que alguien te diga qué hacer, sino de
-                  descubrir por vos mismo qué te está frenando, qué te impulsa y
+                  <span> descubrir por vos mismo </span>qué te está frenando, qué te impulsa y
                   cómo podés crear los cambios que realmente necesitás.
                 </p>
               </div>
+
               <div className={styles.thirdrow}>
                 <div className={styles.benefitscards}>
                   {benefitsData.map((item, index) => (

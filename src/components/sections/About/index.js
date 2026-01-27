@@ -5,9 +5,9 @@ import TitleButton from "../../ui/TitleButton";
 import Button from "../../ui/Button";
 import Image from "next/image";
 import { MaskText } from "../../ui/MaskText";
+import { Link } from "react-scroll";
 
-export default function About({id}) {
-
+export default function About({ id }) {
   const phrases = ["Detrás del proceso de", "transformación"];
 
   return (
@@ -21,9 +21,9 @@ export default function About({id}) {
                 alt="Sobre Mi"
                 fill
                 sizes="(max-width: 50vw) 100vw, 50vw"
-                style={{ 
+                style={{
                   objectFit: "cover",
-                  objectPosition: "center top"
+                  objectPosition: "center top",
                 }}
                 loading="eager"
               />
@@ -52,7 +52,10 @@ export default function About({id}) {
                 creatividad y una mirada positiva del cambio, para que los
                 avances sean reales, sostenibles y alineados con vos.
               </p>
-              <Button>Contacto</Button>
+
+              <Link to="contact" smooth={true} offset={5} duration={400}>
+                <Button>Contacto</Button>
+              </Link>
             </div>
           </div>
         </Container>
