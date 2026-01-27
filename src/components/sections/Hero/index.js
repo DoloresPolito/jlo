@@ -68,7 +68,10 @@ export default function Hero({ id }) {
                 alt="Hero"
                 fill
                 priority
-                style={{ objectFit: "cover" }}
+                style={{
+                  objectFit: "cover",
+                  objectPosition: "70% center",
+                }}
               />
             </div>
           </div>

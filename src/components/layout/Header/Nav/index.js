@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./style.module.scss";
 import { motion } from "framer-motion";
 import { menuSlide, slide } from "../animation";
-import { Link } from "react-scroll";
+import { Link, scroller } from "react-scroll";
 
 export default function Nav({ closeMenu }) {
   const navItems = [
@@ -37,10 +37,12 @@ export default function Nav({ closeMenu }) {
                     to={item.href}
                     smooth={true}
                     offset={5}
-                    duration={600}
+                    duration={400}
                     onClick={closeMenu}
                   >
                     <h2 className="h2">{item.label}</h2>
+
+                    
                   </Link>
                 </motion.div>
               );

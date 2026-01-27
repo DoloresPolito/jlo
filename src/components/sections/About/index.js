@@ -21,7 +21,10 @@ export default function About({id}) {
                 alt="Sobre Mi"
                 fill
                 sizes="(max-width: 50vw) 100vw, 50vw"
-                style={{ objectFit: "cover" }}
+                style={{ 
+                  objectFit: "cover",
+                  objectPosition: "center top"
+                }}
                 loading="eager"
               />
             </div>
@@ -31,7 +34,6 @@ export default function About({id}) {
 
               <MaskText phrases={phrases} />
 
-              {/* <h2 className="h2">Detrás del proceso de transformación</h2> */}
               <p className="text">
                 Hola, soy Juan. Neurocoach apasionado por acompañar a personas
                 en su <span>proceso de crecimiento y transformación.</span>
