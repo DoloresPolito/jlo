@@ -14,13 +14,11 @@
     color: $color-blue;
   }
 
-
-  h3{
+  h3 {
     align-self: flex-end;
 
     @media (max-width: 800px) {
       align-self: flex-start;
-
     }
   }
 }
@@ -32,9 +30,9 @@
   justify-content: flex-end;
   width: 100%;
   margin: 2vh 0;
-//   @media only screen and (max-width: 1000px) {
-//     width: 100%;
-//   }
+  //   @media only screen and (max-width: 1000px) {
+  //     width: 100%;
+  //   }
 }
 
 .input {
@@ -46,9 +44,10 @@
   background-color: $color-white-bg;
   outline: none;
   color: $color-blue;
-
+  font-size: 2vh;
   &::placeholder {
     text-align: right;
+    font-size: 1.8vh;
   }
 }
 
@@ -68,4 +67,3 @@
   display: flex;
   justify-content: flex-end;
 }
-
