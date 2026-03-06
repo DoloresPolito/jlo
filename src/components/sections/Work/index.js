@@ -40,7 +40,7 @@ export default function Work({ id }) {
                     <span>Estaré a tu lado</span> para{" "}
                     <span>sostener el foco</span>,{" "}
                     <span>activar el cambio</span> y
-                    <span>acompañarte en cada etapa</span>.
+                    <span> acompañarte en cada etapa</span>.
                   </p>
                 </div>
 
